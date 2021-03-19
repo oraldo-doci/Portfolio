@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+ ul {
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ .aboutMe {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: #ddd;
+    border-radius: 50px;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/portfolio-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0 1px 0 black;
+    max-width: 100%;
+}
+
+ .avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+ }
+ .projectLink {
+     background-color: blueviolet;
+     border-radius: 100px;
+     text-decoration: none;
+     color: #f1f1f1;
+     padding: 5px;
+ }
+
+  .mainFooter {
+    padding: 20px;
+    bottom: 0;
+  text-align: center;
+  background: #ddd;
+  }
+a{
+    text-emphasis: none;
+    text-decoration: none;
+    background-color: blueviolet;
+    border-radius: 50px;
+    padding: 5px;
+    color: #f1f1f1;
+}
+  .socialFooter {
+      display: flex;
+      justify-content: space-around;
+     border-radius: 100px;
+     text-decoration: none;
+     color: #f1f1f1;
+     padding: 5px;
+  }
